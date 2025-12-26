@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <ul id="root"></ul>
+    <script>
+        const fruitlist=['Apple','Banana','Mango']
+       const  ul=document.querySelector("#root")
+      fruitlist .map((fruit)=>{
+         const li=document.createElement("li")
+         li.innerHTML=fruit
+         ul.appendChild(li)
+       })
+
+    </script>
+</body>
+</html>
