@@ -6,16 +6,26 @@
     <title>Array Method</title>
 </head>
 <body>
-    <ul id="root"></ul>
+    <!-- <ul id="root"></ul> -->
+     <div id="root"></div>
     <script>
         const fruitlist=['Apple','Banana','Mango']
-       const  ul=document.querySelector("#root")
-      fruitlist .map((fruit)=>{
+    //    const  ul=document.querySelector("#root")
+    //   fruitlist .map((fruit)=>{
+    //      const li=document.createElement("li")
+    //      li.innerHTML=fruit
+    //      ul.appendChild(li)
+    //    })
+
+    const div=document.querySelector("#root")
+    const ul=document.createElement("ul")
+    fruitlist .map((fruit)=>{
          const li=document.createElement("li")
          li.innerHTML=fruit
          ul.appendChild(li)
        })
-
+       div.appendChild(ul)
     </script>
+
 </body>
 </html>
