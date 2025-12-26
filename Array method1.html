@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const users= [
+  { id: 1, name: 'John', age: 30 },
+  { id: 2, name: 'Jane', age: 25 },
+  { id: 3, name: 'Bob', age: 35 }
+];
+const div=document.querySelector("#root")
+const ul=document.createElement("ul")
+users.map((user)=>{
+  const li=document.createElement("li")
+  li.innerHTML=`${user.name} is ${user.age} years old`
+  ul.appendChild(li)
+})
+div.appendChild(ul)
+    </script>
+</body>
+</html>
